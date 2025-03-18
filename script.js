@@ -41,4 +41,35 @@ document.querySelectorAll('.servico-card').forEach(card => {
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'all 0.5s ease-in-out';
     observer.observe(card);
-}); 
+});
+
+// Controle do tema
+function initTheme() {
+    const themeSwitch = document.getElementById('themeSwitch');
+    const themeIcon = themeSwitch.querySelector('.theme-icon');
+    const themeText = themeSwitch.querySelector('.theme-text');
+    
+    // Verifica se há um tema salvo
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        updateThemeButton(savedTheme === 'dark', themeIcon, themeText);
+    }
+
+    themeSwitch.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeButton(newTheme === 'dark', themeIcon, themeText);
+    });
+}
+
+function updateThemeButton(isDark, icon, text) {
+    icon.textContent = isDark ? '🌜' : '🌞';
+    text.textContent = isDark ? 'Modo Claro' : 'Modo Escuro';
+}
+
+// Inicializa o tema quando o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', initTheme); 
