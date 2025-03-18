@@ -46,27 +46,36 @@ document.querySelectorAll('.servico-card').forEach(card => {
 // Controle do tema
 function initTheme() {
     const themeSwitch = document.getElementById('themeSwitch');
+    if (!themeSwitch) return;
+
     const themeIcon = themeSwitch.querySelector('.theme-icon');
     const themeText = themeSwitch.querySelector('.theme-text');
     
     // Verifica se há um tema salvo
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        updateThemeButton(savedTheme === 'dark', themeIcon, themeText);
-    }
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    applyTheme(savedTheme);
+    updateThemeButton(savedTheme === 'dark', themeIcon, themeText);
 
     themeSwitch.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
+        applyTheme(newTheme);
         updateThemeButton(newTheme === 'dark', themeIcon, themeText);
+        localStorage.setItem('theme', newTheme);
     });
 }
 
+function applyTheme(theme) {
+    if (theme === 'dark') {
+        document.body.classList.add('dark-theme');
+    } else {
+        document.body.classList.remove('dark-theme');
+    }
+}
+
 function updateThemeButton(isDark, icon, text) {
+    if (!icon || !text) return;
     icon.textContent = isDark ? '🌜' : '🌞';
     text.textContent = isDark ? 'Modo Claro' : 'Modo Escuro';
 }
