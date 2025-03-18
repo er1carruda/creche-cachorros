@@ -230,15 +230,6 @@ Utilizamos o padrão de commits semânticos:
 - Interface simplificada
 - Processo de agendamento intuitivo
 
-### 6.4 Galeria de Fotos
-![Ambiente da Creche 1](./images/image_fx_\(4\).jpg)
-![Ambiente da Creche 2](./images/image_fx_\(5\).jpg)
-![Ambiente da Creche 3](./images/image_fx_\(6\).jpg)
-![Ambiente da Creche 4](./images/image_fx_\(7\).jpg)
-- Fotos dos ambientes e instalações
-- Momentos especiais com os pets
-- Demonstração do espaço e cuidados oferecidos
-
 ## 7. Próximos Passos
 
 ### 7.1 Melhorias Planejadas
