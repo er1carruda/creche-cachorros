@@ -181,6 +181,14 @@ git tag -a v1.1.3 -m "Otimização de JavaScript"
 - Código modular
 - Correção de erros
 
+#### v1.1.4 - Documentação Visual
+```bash
+git tag -a v1.1.4 -m "docs: adiciona capturas de tela na documentação"
+```
+- Adição de capturas de tela do projeto
+- Documentação visual da interface
+- Organização da galeria de fotos
+
 ### 3.3 Commits Semânticos
 Utilizamos o padrão de commits semânticos:
 - `feat`: novas funcionalidades
