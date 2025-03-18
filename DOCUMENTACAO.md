@@ -20,17 +20,6 @@ A página de agendamento permite aos clientes marcarem visitas e serviços.
 
 ![Página de Agendamento](./images/schedule.png)
 
-## 📸 Galeria
-Apresentamos uma seleção de fotos dos nossos ambientes e pets hospedados:
-
-![Foto 1](./images/image_fx_\(4\).jpg)
-
-![Foto 2](./images/image_fx_\(5\).jpg)
-
-![Foto 3](./images/image_fx_\(6\).jpg)
-
-![Foto 4](./images/image_fx_\(7\).jpg)
-
 ## 🔧 Estrutura do Projeto
 
 ### Arquivos Principais
