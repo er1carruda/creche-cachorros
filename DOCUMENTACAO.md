@@ -1,4 +1,63 @@
-# Documentação do Projeto - Patinhas Felizes 🐾
+# 📑 Documentação do Projeto Creche de Cachorros
+
+## 📋 Visão Geral
+Este documento detalha a estrutura, funcionalidades e implementação do website da Creche de Cachorros.
+
+## 🖥️ Interface do Usuário
+
+### Página Inicial
+A página inicial apresenta os principais serviços da creche, destaques e informações de contato.
+
+![Página Inicial](./images/home.png)
+
+### Visualização Mobile
+O website é totalmente responsivo, adaptando-se perfeitamente a dispositivos móveis.
+
+![Versão Mobile](./images/mobile.png)
+
+### Sistema de Agendamento
+A página de agendamento permite aos clientes marcarem visitas e serviços.
+
+![Página de Agendamento](./images/schedule.png)
+
+## 📸 Galeria
+Apresentamos uma seleção de fotos dos nossos ambientes e pets hospedados:
+
+![Foto 1](./images/image_fx_\(4\).jpg)
+
+![Foto 2](./images/image_fx_\(5\).jpg)
+
+![Foto 3](./images/image_fx_\(6\).jpg)
+
+![Foto 4](./images/image_fx_\(7\).jpg)
+
+## 🔧 Estrutura do Projeto
+
+### Arquivos Principais
+- `index.html`: Página inicial
+- `agendamento.html`: Sistema de agendamento
+- `styles/`: Pasta contendo arquivos CSS
+- `scripts/`: Pasta contendo arquivos JavaScript
+- `images/`: Pasta contendo todas as imagens do projeto
+
+### Tecnologias Utilizadas
+- HTML5 para estruturação
+- CSS3 para estilização e responsividade
+- JavaScript vanilla para interatividade
+- Imagens do Unsplash
+
+## 📱 Compatibilidade
+O website foi testado e é compatível com:
+- Google Chrome
+- Mozilla Firefox
+- Safari
+- Microsoft Edge
+- Dispositivos móveis Android e iOS
+
+## 🔄 Atualizações Futuras
+- Implementação de sistema de login para clientes
+- Área administrativa para gerenciamento de agendamentos
+- Sistema de avaliações e feedback
 
 ## 1. Configuração Inicial do Projeto
 
@@ -157,22 +216,31 @@ Utilizamos o padrão de commits semânticos:
 ## 6. Capturas de Tela
 
 ### 6.1 Página Inicial
-![Página Inicial](screenshots/home.png)
-- Design responsivo
-- Tema claro/escuro
-- Navegação intuitiva
+![Página Inicial](./images/home.png)
+- Design moderno e intuitivo
+- Apresentação clara dos serviços
+- Interface amigável e acolhedora
 
-### 6.2 Página de Agendamento
-![Agendamento](screenshots/agendamento.png)
-- Formulário interativo
-- Validação em tempo real
-- Feedback visual
-
-### 6.3 Versão Mobile
-![Mobile](screenshots/mobile.png)
+### 6.2 Versão Mobile
+![Versão Mobile](./images/mobile.png)
 - Layout adaptativo
 - Menu responsivo
-- Performance otimizada
+- Experiência otimizada para dispositivos móveis
+
+### 6.3 Sistema de Agendamento
+![Sistema de Agendamento](./images/schedule.png)
+- Formulário interativo
+- Interface simplificada
+- Processo de agendamento intuitivo
+
+### 6.4 Galeria de Fotos
+![Ambiente da Creche 1](./images/image_fx_\(4\).jpg)
+![Ambiente da Creche 2](./images/image_fx_\(5\).jpg)
+![Ambiente da Creche 3](./images/image_fx_\(6\).jpg)
+![Ambiente da Creche 4](./images/image_fx_\(7\).jpg)
+- Fotos dos ambientes e instalações
+- Momentos especiais com os pets
+- Demonstração do espaço e cuidados oferecidos
 
 ## 7. Próximos Passos
 
